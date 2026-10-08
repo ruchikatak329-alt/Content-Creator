@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mansi Sankhla — Content Creator</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,600;0,800;1,700;1,900&family=Playfair+Display:wght@500;700&family=Cormorant+Garamond:wght@500;700&family=Abril+Fatface&family=Pacifico&family=Karla:wght@400;500&family=Nunito:wght@400;600&family=Poppins:wght@300;400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3faff;--text:#2d3a63;--accent:#d93a66;--gold:#ffc93c;--teal:#4fd1b0;--lilac:#b69cff;--card:#fff;--soft:#5d6a94;--hf:Fraunces,Georgia,serif;--bf:var(--bf)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body::before{content:'';position:fixed;inset:0;z-index:-1;background:radial-gradient(circle at 8% 8%,#ffe3ec,transparent 34%),radial-gradient(circle at 92% 28%,#e6defd,transparent 36%),radial-gradient(circle at 15% 92%,#d6f4ff,transparent 40%)}
+body{background:var(--bg);color:var(--text);font:400 16px/1.7 Poppins,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:var(--hf);font-weight:700;line-height:1.1}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+.script{font-family:Caveat,cursive;font-size:1.5rem;color:var(--accent)}
+section{padding:90px 6vw;max-width:1150px;margin:auto}
+h2{font-size:clamp(2rem,4.5vw,3.2rem);margin:4px 0 30px}
+nav{position:sticky;top:0;z-index:9;background:var(--bg);display:flex;align-items:center;gap:8px 22px;padding:14px 6vw;overflow-x:auto;white-space:nowrap}
+nav b{font:700 1.5rem var(--hf);margin-right:auto}nav b i{color:var(--accent);font-style:normal}
+nav a{text-decoration:none;font-size:.88rem}nav a:hover{color:var(--accent)}
+nav a.last{background:var(--accent);color:#fff;padding:7px 18px;border-radius:99px}
+.hero{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;min-height:84vh}
+.hero{overflow:hidden}.hero h1{text-transform:none;line-height:.95}
+.hero h1 .f1{display:block;font-family:var(--hf);font-style:italic;font-weight:900;font-size:clamp(4.4rem,13vw,9rem);line-height:.95;padding-right:.1em;background:linear-gradient(100deg,var(--accent),var(--gold),var(--teal),var(--lilac),var(--accent));background-size:300% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:shine 8s linear infinite}
+.hero h1 .f2{display:block;font:700 clamp(2.6rem,7vw,4.8rem)/1 Caveat,cursive;transform:rotate(-3deg) translateX(.6em);margin-top:-.05em}
+@keyframes shine{to{background-position:300% 0}}
+.hero .sub{font-size:1.1rem;letter-spacing:.2em;text-transform:uppercase;margin:12px 0 22px;color:var(--soft)}
+.hero .q{font:italic 500 1.35rem var(--hf);max-width:28ch;margin-bottom:28px}
+.btn{display:inline-block;background:var(--text);color:var(--bg);padding:13px 28px;border-radius:99px;text-decoration:none;font-weight:500;transition:background .2s}
+.btn:hover{background:var(--accent)}
+.photo{aspect-ratio:3/4;max-width:320px;margin:auto;border-radius:200px 200px 24px 24px;background:var(--card);border:2px dashed var(--accent);display:grid;place-items:center;text-align:center;color:var(--soft);position:relative}
+.photowrap>.tag-me{position:absolute;bottom:-34px;right:0;transform:rotate(-6deg)}
+.photowrap{position:relative;padding-top:60px}
+.cat{position:absolute;display:block;width:92px;height:92px;color:#f59e4b;animation:sway 4s ease-in-out infinite;transform-origin:50% 100%}
+.cat img,.cat svg{width:100%;height:100%;object-fit:contain}
+.photowrap .cat{top:-4px;right:6px}
+section{position:relative}
+.why-cat{top:70px;right:6vw}
+.badge{position:relative;width:min(300px,70vw);aspect-ratio:1;margin:auto}
+.badge svg{width:100%;animation:spin 22s linear infinite}
+.badge text{font:600 13.5px Poppins;letter-spacing:.14em;fill:var(--text);text-transform:uppercase}
+.badge .core{position:absolute;inset:26%;border-radius:50%;background:linear-gradient(135deg,var(--accent),var(--gold));display:grid;place-items:center;font-size:3.2rem;animation:bob 3s ease-in-out infinite}
+.avail{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--text);border-radius:99px;padding:5px 16px;font-size:.82rem;margin-bottom:18px}
+.avail i{width:8px;height:8px;border-radius:50%;background:var(--teal);animation:pulse 1.8s infinite}
+.st{position:absolute;font-size:1.7rem;pointer-events:none;user-select:none;z-index:1}
+.st.f{animation:bob 4s ease-in-out infinite}.st.t{animation:twinkle 2.6s ease-in-out infinite}.st.w{animation:sway 3.5s ease-in-out infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bob{50%{transform:translateY(-12px)}}
+@keyframes sway{50%{transform:rotate(7deg)}}
+@keyframes twinkle{50%{transform:scale(1.35) rotate(15deg);opacity:.55}}
+@keyframes pulse{50%{opacity:.3;transform:scale(1.5)}}
+.media{display:grid;grid-template-columns:1fr 1fr 1.5fr;gap:18px;margin:28px 0;align-items:center}
+.media .reel{transform:none}.media .reel:nth-child(2){transform:translateY(16px)}
+.media .post{aspect-ratio:4/5;border-radius:22px;border:2px dashed var(--teal);display:grid;place-items:center;text-align:center;font-size:.85rem;color:var(--soft)}
+.about{display:grid;grid-template-columns:1.5fr 1fr;gap:50px;align-items:start}
+.about p{margin-bottom:16px}
+.pull{font:italic 500 1.8rem/1.3 var(--hf);color:var(--accent);border-left:4px solid var(--gold);padding-left:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+.card{background:var(--card);border-radius:24px;padding:28px;border:1px solid rgba(74,15,42,.12)}
+.card .n{font:700 2.2rem var(--hf);color:var(--gold)}
+.card h3{font-size:1.3rem;margin:4px 0 8px}.card p{font-size:.93rem;color:var(--soft)}
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.why .card:nth-child(3n+1){background:var(--accent);color:#fff}.why .card:nth-child(3n+1) p,.why .card:nth-child(3n+1) .script{color:#fff}
+.why .card:nth-child(3n+2){background:var(--gold);color:#3a1a00}.why .card:nth-child(3n+2) p,.why .card:nth-child(3n+2) .script{color:#3a1a00}
+.why .card:nth-child(3n){background:var(--teal);color:var(--text)}.why .card:nth-child(3n) p,.why .card:nth-child(3n) .script{color:var(--text)}
+.star{font-size:1.4rem}.why .script{display:block;margin-top:10px;font-size:1.3rem}
+.flowline{text-align:center;margin-top:30px;font:italic 500 1.5rem var(--hf);color:var(--accent)}
+.work{position:relative;background:var(--card);border-radius:32px;padding:clamp(22px,4vw,48px);border:1px solid rgba(74,15,42,.12)}
+.pill{display:inline-block;border:1px solid var(--text);border-radius:99px;padding:2px 14px;font-size:.82rem;margin:0 6px 8px 0}
+.work h3{font-size:clamp(2.8rem,8vw,5.5rem);color:var(--accent);margin:6px 0}
+.reels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0}
+.reel{aspect-ratio:9/16;border-radius:22px;border:2px dashed var(--accent);display:grid;place-items:center;text-align:center;font-size:.85rem;color:var(--soft);padding:10px}
+.reel:nth-child(2){transform:translateY(20px);border-color:var(--gold)}.reel:nth-child(3){border-color:var(--teal)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:34px}
+.two h4{font:700 1.3rem var(--hf);margin-bottom:6px}
+.stage{position:relative;height:470px;display:flex;justify-content:center;align-items:flex-end}
+.bagbtn{background:none;border:0;cursor:pointer;width:190px;position:relative;z-index:3;animation:sway 3.5s ease-in-out infinite;transform-origin:50% 100%}
+.bagbtn svg{width:100%;filter:drop-shadow(0 10px 14px rgba(45,58,99,.25))}
+.stage .hint{position:absolute;bottom:6px;right:calc(50% + 125px);transform:rotate(-6deg);transition:opacity .3s}
+.item{position:absolute;left:50%;top:150px;width:min(190px,16vw);margin-left:calc(min(190px,16vw)/-2);background:var(--card);border-radius:18px;padding:14px 16px;border:2px solid var(--c);box-shadow:0 8px 20px rgba(45,58,99,.12);text-align:center;opacity:0;pointer-events:none;transform:translateY(230px) scale(.2);transition:transform .6s cubic-bezier(.34,1.56,.64,1) var(--d),opacity .3s var(--d);z-index:2}
+.stage.open .item{opacity:1;pointer-events:auto;transform:translate(calc(var(--k)*min(205px,17.5vw)),var(--y)) rotate(calc(var(--k)*3deg))}
+.item b{display:block;font:700 1.1rem var(--hf)}.item span{display:block;font-size:.82rem;line-height:1.4;color:var(--soft)}
+@keyframes pop{from{opacity:0;transform:translateY(14px)}}
+@media(max-width:1000px){.stage{height:auto;flex-direction:column;align-items:center;gap:14px}.stage .hint{position:static}.item{position:static;width:min(420px,100%);margin:0;display:none;transform:none}.stage.open .item{display:block;transform:none;animation:pop .4s both}}
+.edit{display:grid;grid-template-columns:1fr 1.4fr;gap:30px}
+.frame{border-radius:24px;border:2px dashed var(--accent);display:grid;place-items:center;text-align:center;color:var(--soft);padding:16px}
+.frame.v{aspect-ratio:9/16;max-width:250px}.frame.p{aspect-ratio:4/5}
+.edit h3{font-size:1.5rem;margin-bottom:12px}.edit .cap{margin-top:12px;font:italic 500 1.05rem var(--hf)}.edit .ba{font-size:.9rem;color:var(--soft)}
+.plat{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:16px}
+.plat div{border-radius:99px;padding:18px 24px;text-align:center;font:700 1.15rem var(--hf)}
+.plat small{display:block;font:400 .8rem Poppins;opacity:.85}
+.plat div:nth-child(1){background:var(--accent);color:#fff}.plat div:nth-child(2){background:var(--gold);color:#3a1a00}.plat div:nth-child(3){background:var(--teal);color:var(--text)}.plat div:nth-child(4){background:var(--text);color:var(--bg)}.plat div:nth-child(5){background:var(--card);border:1px solid var(--text)}
+footer{background:linear-gradient(135deg,#ffe3ec,#e6defd 50%,#d6f4ff);color:var(--text);text-align:center;padding:90px 6vw 40px;margin-top:60px}
+footer h2{max-width:16ch;margin:6px auto 18px}footer .script{color:var(--accent)}
+.links{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:28px 0}
+.links a{border:1px solid var(--text);border-radius:99px;padding:10px 22px;text-decoration:none;font-size:.9rem}
+.links a:hover{background:var(--gold);border-color:var(--gold)}
+footer .btn{background:var(--accent);color:#fff}footer .btn:hover{background:var(--gold);color:#3a1a00}
+footer small{display:block;margin-top:46px;opacity:.65}
+@media(max-width:800px){.media{grid-template-columns:1fr 1fr}.media .post{grid-column:1/-1}.why-cat{top:50px;width:70px;height:70px}.st{font-size:1.3rem}.hero,.about,.two,.edit,.bag{grid-template-columns:1fr}.hero{min-height:auto;padding-top:50px}.bagbtn{margin:auto}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+.slot{cursor:default}.slot.has{border-style:solid;overflow:hidden;padding:0}.slot img,.slot video{width:100%;height:100%;object-fit:cover}.slot.busy{opacity:.45}
+.st.drop{position:absolute;pointer-events:auto;cursor:grab;font-size:2.4rem;z-index:50;touch-action:none}
+body.editing .slot{cursor:pointer;outline:3px dashed var(--accent);outline-offset:4px}[contenteditable]:hover{outline:1px dashed var(--accent)}
+.bar{position:fixed;bottom:14px;left:50%;transform:translateX(-50%);z-index:99;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;max-width:96vw;background:#fff;border:2px solid var(--text);border-radius:18px;padding:8px;box-shadow:0 8px 24px rgba(45,58,99,.25)}
+.bar button,.pan button{font:500 .8rem Poppins;border:0;border-radius:99px;padding:8px 14px;background:var(--text);color:#fff;cursor:pointer}.bar button:hover{background:var(--accent)}
+.pan{position:fixed;bottom:84px;left:50%;transform:translateX(-50%);z-index:99;background:#fff;border:2px solid var(--text);border-radius:18px;padding:14px;display:grid;gap:10px;font:.85rem Poppins;width:min(340px,92vw);box-shadow:0 8px 24px rgba(45,58,99,.25)}.pan[hidden]{display:none}
+.pan label{display:flex;justify-content:space-between;align-items:center;gap:10px}.pan select{max-width:200px}.pan .em{display:flex;flex-wrap:wrap;gap:8px}.pan .em button{background:#f3faff;font-size:1.5rem;padding:4px 10px}
+</style>
+</head>
+<body>
+<nav><b>MANSI<i>.</i></b><a href="#home">Home</a><a href="#about">About</a><a href="#what">What I Do</a><a href="#why">Why Me</a><a href="#work">Work</a><a href="#tools">Tools</a><a href="#edit">Editing</a><a href="#platforms">Platforms</a><a class="last" href="#contact">Let's Connect</a></nav>
+
+<section class="hero" id="home">
+  <span class="st f" style="top:12%;left:3%" aria-hidden="true">🎀</span><span class="st t" style="top:8%;left:46%" aria-hidden="true">✨</span><span class="st w" style="bottom:12%;left:8%" aria-hidden="true">🌸</span><span class="st f" style="bottom:10%;right:6%" aria-hidden="true">📸</span><span class="st t" style="top:14%;right:4%" aria-hidden="true">💫</span>
+  <div>
+    <span class="avail"><i></i>open for collaborations</span><br>
+    <span class="script">content creator ✦</span>
+    <h1><span class="f1">Mansi</span><span class="f2">Sankhla</span></h1>
+    <p class="sub">Content Creator Portfolio</p>
+    <p class="q">"Making content people want to stop, watch and share."</p>
+    <a class="btn" href="#about">Explore My Work ↓</a>
+  </div>
+  <div class="badge" aria-hidden="true">
+    <svg viewBox="0 0 200 200"><defs><path id="c" d="M100,100 m-80,0 a80,80 0 1,1 160,0 a80,80 0 1,1 -160,0"/></defs><text><textPath href="#c">reels ✦ posts ✦ stories ✦ ideas ✦ edits ✦ </textPath></text></svg>
+    <div class="core">🎬</div>
+  </div>
+</section>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="catsym" viewBox="0 0 100 100"><path d="M74 86 Q99 84 92 54" fill="none" stroke="currentColor" stroke-width="8" stroke-linecap="round"/><ellipse cx="50" cy="76" rx="26" ry="21" fill="currentColor"/><circle cx="50" cy="42" r="22" fill="currentColor"/><path d="M31 30 L29 6 L47 21Z M69 30 L71 6 L53 21Z" fill="currentColor"/><circle cx="42" cy="42" r="3.5" fill="#2d3a63"/><circle cx="58" cy="42" r="3.5" fill="#2d3a63"/><path d="M47 50 L53 50 L50 54Z" fill="#d6246e"/><path d="M24 48 L38 50 M24 55 L38 53 M76 48 L62 50 M76 55 L62 53" stroke="#2d3a63" stroke-width="1.6" stroke-linecap="round"/><path d="M40 62 L50 67 L40 72Z M60 62 L50 67 L60 72Z" fill="#d6246e"/></symbol></svg>
+<section class="about" id="about">
+  <div>
+    <span class="script">get to know me</span>
+    <h2>A Little About Me</h2>
+    <p>I'm a content creator who loves the whole journey of a post: the first spark of an idea, the shoot, the edit, and the moment someone stops scrolling because of it.</p>
+    <p>I started out as a social media trainee at Catchy Climbers, a marketing agency, where I handled a client's page, came up with post and reel concepts and learned how a brand's voice stays consistent across platforms.</p>
+    <p>Now I create reels and posts for small businesses, cutting raw footage into short videos built to hold attention. I like content that feels warm, a little playful, and always has a reason to exist.</p>
+    <p class="pull">good content feels like a friend showing you something, not a brand telling you something.</p>
+  </div>
+  <div class="photowrap">
+    <span class="cat"><img src="cat1.png" alt="" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><svg aria-hidden="true"><use href="#catsym"/></svg></span>
+    <div class="photo slot"><span>your photo<br>goes here</span></div><span class="script tag-me">that's me ✦</span>
+  </div>
+</section>
+
+<section id="what">
+  <span class="script">what I do best ✦</span>
+  <h2>What I Bring To The Table</h2>
+  <div class="grid">
+    <div class="card"><span class="n">01</span><h3>Reels &amp; Short Video</h3><p>Hooks, shooting and editing for vertical videos people watch to the end.</p></div>
+    <div class="card"><span class="n">02</span><h3>Posts &amp; Carousels</h3><p>Designed, story-led posts that look good and say something.</p></div>
+    <div class="card"><span class="n">03</span><h3>Ideas &amp; Scripting</h3><p>Reel concepts, captions and content pillars so a page never runs dry.</p></div>
+    <div class="card"><span class="n">04</span><h3>Stories &amp; Behind The Scenes</h3><p>Day-in-the-life content that makes a brand feel like real people.</p></div>
+    <div class="card"><span class="n">05</span><h3>Content Planning</h3><p>A clear monthly calendar so posting stays steady and nothing is last minute.</p></div>
+  </div>
+</section>
+
+<section id="why">
+  <span class="cat why-cat"><img src="cat2.png" alt="" onload="this.nextElementSibling.style.display='none'" onerror="this.remove()"><svg aria-hidden="true"><use href="#catsym"/></svg></span><span class="st t" style="top:40px;left:42%" aria-hidden="true">✨</span>
+  <span class="script">why me ✦</span>
+  <h2>Why Me?</h2>
+  <div class="why">
+    <div class="card"><span class="star">✦</span><h3>Hook In 3 Seconds</h3><p>Every reel opens with a reason to stay. I plan the first frame before anything else.</p><span class="script">stop the scroll.</span></div>
+    <div class="card"><span class="star">✦</span><h3>I Shoot &amp; Edit</h3><p>One person from idea to final export means faster turnarounds and a consistent look.</p><span class="script">no handoffs.</span></div>
+    <div class="card"><span class="star">✦</span><h3>Consistency</h3><p>A creator who posts on schedule beats one who posts brilliantly once a month.</p><span class="script">steady wins.</span></div>
+    <div class="card"><span class="star">✦</span><h3>Platform Smart</h3><p>Instagram, YouTube and Pinterest each speak differently. I adapt the content to fit.</p><span class="script">right format, right place.</span></div>
+    <div class="card"><span class="star">✦</span><h3>Trend Aware, Brand True</h3><p>I follow what's working and filter it through the brand's personality.</p><span class="script">on trend, on brand.</span></div>
+    <div class="card"><span class="star">✦</span><h3>Content With A Point</h3><p>Every post has a goal: awareness, trust, or a reason to walk in.</p><span class="script">purpose over pretty.</span></div>
+  </div>
+  <p class="flowline">Hook → Create → Grow</p>
+</section>
+
+<section id="work">
+  <span class="script">a few things I've been creating ✦</span>
+  <h2>Recent Work</h2>
+  <div class="work" id="project">
+    <span class="st f" style="top:14px;right:22px" aria-hidden="true">🌷</span>
+    <span class="pill">Instagram</span><span class="pill">Reels</span><span class="pill">Boutique brand</span>
+    <h3>Sutrangi</h3>
+    <p>A boutique brand, so the content is all about the collection: the fabric, the colour, the fit and how it feels to wear it.</p>
+    <div class="media"><div class="reel slot">reel 1<br>add video</div><div class="reel slot">reel 2<br>add video</div><div class="post slot">post<br>add image</div></div>
+    <span class="pill">Reel concepts</span><span class="pill">Outfit showcase</span><span class="pill">Editing</span><span class="pill">Captions</span><span class="pill">Trend research</span>
+    <div class="two">
+      <div><h4>Goal</h4><p>Show the boutique's collection in a way that feels stylish and inviting, grow awareness, and give people a reason to follow, save and enquire.</p></div>
+      <div><h4>Approach</h4><p>I planned reels and posts around outfit showcases and brand moments, kept the colours and styling consistent, and wrote captions that sound like the brand.</p></div>
+    </div>
+    <p style="margin-top:26px;font-size:.92rem;color:var(--soft)">Earlier: handled a client's Instagram page at Catchy Climbers, creating post and reel concepts and managing day-to-day content.</p>
+  </div>
+</section>
+
+<section id="tools">
+  <span class="st w" style="top:80px;right:8vw" aria-hidden="true">⭐</span>
+  <span class="script">what's in my bag ✦</span>
+  <h2>What's In My Bag?</h2>
+  <p style="margin-bottom:10px">The tools I work with.</p>
+  <div class="stage" id="stage">
+    <button class="bagbtn" id="bagbtn" aria-expanded="false" aria-label="Tap the bag to see my tools"><svg viewBox="0 0 160 170" aria-hidden="true"><defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" style="stop-color:var(--accent)"/><stop offset="1" style="stop-color:var(--gold)"/></linearGradient></defs><path d="M50 56C50 4 110 4 110 56" fill="none" stroke="#2d3a63" stroke-width="7" stroke-linecap="round"/><path d="M22 54H138L148 150Q149 166 133 166H27Q11 166 12 150Z" fill="url(#bg)" stroke="#2d3a63" stroke-width="4"/><path d="M18 74H142" stroke="#fff" stroke-opacity=".6" stroke-width="3" stroke-dasharray="2 8" stroke-linecap="round"/><circle cx="58" cy="108" r="6" fill="#2d3a63"/><circle cx="102" cy="108" r="6" fill="#2d3a63"/><circle cx="60" cy="106" r="2" fill="#fff"/><circle cx="104" cy="106" r="2" fill="#fff"/><ellipse cx="44" cy="124" rx="8" ry="5" fill="#fff" opacity=".5"/><ellipse cx="116" cy="124" rx="8" ry="5" fill="#fff" opacity=".5"/><path d="M70 120Q80 132 90 120" fill="none" stroke="#2d3a63" stroke-width="4" stroke-linecap="round"/><path d="M80 66l4 9 9 4-9 4-4 9-4-9-9-4 9-4z" fill="#fff"/></svg></button>
+    <span class="script hint">tap the bag ✦</span>
+    <div class="item" style="--k:-2;--y:0px;--d:.05s;--c:var(--accent)"><b>Canva</b><span>Clean graphics for posts, reel covers and stories.</span></div>
+    <div class="item" style="--k:-1;--y:-75px;--d:.12s;--c:var(--gold)"><b>CapCut</b><span>Cuts, pacing and transitions for short-form reels.</span></div>
+    <div class="item" style="--k:0;--y:-120px;--d:.19s;--c:var(--teal)"><b>Adobe</b><span>Finer edits, colour grading and polish.</span></div>
+    <div class="item" style="--k:1;--y:-75px;--d:.26s;--c:var(--lilac)"><b>InShot</b><span>On-the-go trims, captions and quick exports.</span></div>
+    <div class="item" style="--k:2;--y:0px;--d:.33s;--c:var(--accent)"><b>ChatGPT</b><span>Brainstorming hooks, captions and ideas faster.</span></div>
+  </div>
+</section>
+
+<section id="edit">
+  <span class="script">the edit ✦</span>
+  <h2>Showcasing My Editing Skills</h2>
+  <div class="edit">
+    <div><h3>Reel</h3><div class="frame v slot">reel preview<br>add video</div><p class="cap">"Daily moments turned into engaging content."</p><p class="ba">Before / after: add 1–2 lines here.</p></div>
+    <div><h3>Post (carousel)</h3><div class="frame p slot">carousel photos<br>add images</div><p class="cap">"Lifestyle carousel focused on visual storytelling."</p><p class="ba">Before / after: add 1–2 lines here.</p></div>
+  </div>
+</section>
+
+<section id="platforms">
+  <span class="script">everywhere I show up ✦</span>
+  <h2>Platforms</h2>
+  <div class="plat">
+    <div>Instagram<small>Visual storytelling</small></div>
+    <div>YouTube<small>Video storytelling</small></div>
+    <div>Pinterest<small>Discovery &amp; inspiration</small></div>
+  </div>
+</section>
+
+<footer id="contact" style="position:relative">
+  <span class="st f" style="top:40px;left:10%" aria-hidden="true">💌</span><span class="st t" style="top:60px;right:12%" aria-hidden="true">✨</span>
+  <span class="script">let's make something ✦</span>
+  <h2>Let's Create Something People Remember</h2>
+  <p>Have an idea, a brand or a story that deserves to be seen? Let's turn it into something worth stopping for.</p>
+  <div class="links">
+    <a href="mailto:sankhlamansi723@gmail.com">sankhlamansi723@gmail.com</a>
+    <a href="https://instagram.com/thatgirlmansii">@thatgirlmansii</a>
+    <a href="tel:+919462653296">+91 94626 53296</a>
+  </div>
+  <a class="btn" href="mailto:sankhlamansi723@gmail.com">Let's Connect →</a>
+  <small>Designed &amp; built with intention. © 2026 Mansi Sankhla.</small>
+</footer>
+<script>
+(function(){
+var $=function(q){return document.querySelector(q)},R=document.documentElement.style,st=$('#stage'),bb=$('#bagbtn'),hint=$('.hint');
+bb.onclick=function(){var o=st.classList.toggle('open');bb.setAttribute('aria-expanded',o);hint.style.opacity=o?0:1};
+/* admin: appears only at /admin after login */
+var TEXT='h1 span,h2,h3,h4,p,.script,.pill,.item b,.item span,.sub,.q,.cap,.ba,.plat div,.links a,.card .n,.avail',pw=sessionStorage.getItem('adm'),ed=false,dr=null;
+if(pw)panel();else if(location.pathname.replace(/\/$/,'')=='/admin')login();
+function login(){var p=prompt('Admin password');if(!p)return;fetch('/api/login',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({password:p})}).then(function(r){if(!r.ok)throw 0;sessionStorage.setItem('adm',p);pw=p;panel()}).catch(function(){alert('Incorrect password')})}
+function panel(){
+var d=document.createElement('div');d.className='adm';
+d.innerHTML='<div class="pan" id="aP" hidden><label>Fonts<select id="aF"><option value="Fraunces,Georgia,serif|Poppins,sans-serif">Fraunces + Poppins</option><option value="\'Playfair Display\',serif|Poppins,sans-serif">Playfair + Poppins</option><option value="\'Cormorant Garamond\',serif|Poppins,sans-serif">Cormorant + Poppins</option><option value="\'Abril Fatface\',serif|Karla,sans-serif">Abril Fatface + Karla</option><option value="Pacifico,cursive|Nunito,sans-serif">Pacifico + Nunito</option></select></label><label>Background<input type="color" id="c1" value="#f3faff"></label><label>Text<input type="color" id="c2" value="#2d3a63"></label><label>Accent<input type="color" id="c3" value="#d93a66"></label><button id="aR">Reset colours &amp; fonts</button></div><div class="pan" id="aT" hidden><b>Tap to drop a sticker, drag it, double-click to remove</b><div class="em"></div></div><div class="bar"><button id="aE">✎ Edit Site</button><button id="aD">🎨 Design</button><button id="aS">✨ Stickers</button><button id="aG">⬇ Download Updated Site</button><button id="aO">Log out</button></div>';
+document.body.appendChild(d);
+var em=d.querySelector('.em');'✦ ✨ 💫 🌸 🎀 📸 💌 🌷 ⭐ 🎬 🦋 🍓 🌈'.split(' ').forEach(function(e){var b=document.createElement('button');b.textContent=e;b.onclick=function(){var s=document.createElement('span');s.className='st drop f';s.textContent=e;s.style.left=(innerWidth/2-20+Math.random()*80)+'px';s.style.top=(scrollY+200+Math.random()*80)+'px';document.body.appendChild(s)};em.appendChild(b)});
+var P=$('#aP'),T=$('#aT');
+$('#aD').onclick=function(){T.hidden=true;P.hidden=!P.hidden};$('#aS').onclick=function(){P.hidden=true;T.hidden=!T.hidden};
+$('#aF').onchange=function(){var v=this.value.split('|');R.setProperty('--hf',v[0]);R.setProperty('--bf',v[1])};
+[['c1','--bg'],['c2','--text'],['c3','--accent']].forEach(function(c){$('#'+c[0]).oninput=function(){R.setProperty(c[1],this.value)}});
+$('#aR').onclick=function(){['--bg','--text','--accent','--hf','--bf'].forEach(function(k){R.removeProperty(k)})};
+$('#aE').onclick=function(){ed=!ed;document.body.classList.toggle('editing',ed);this.textContent=ed?'✔ Editing: click text or photos':'✎ Edit Site';document.querySelectorAll(TEXT).forEach(function(e){ed?e.setAttribute('contenteditable','true'):e.removeAttribute('contenteditable')})};
+$('#aO').onclick=function(){sessionStorage.removeItem('adm');location.href='/'};
+$('#aG').onclick=function(){var c=document.documentElement.cloneNode(true);c.querySelectorAll('.adm').forEach(function(n){n.remove()});c.querySelectorAll('[contenteditable]').forEach(function(n){n.removeAttribute('contenteditable')});c.querySelector('body').classList.remove('editing');c.querySelector('#stage').classList.remove('open');c.querySelector('#bagbtn').setAttribute('aria-expanded','false');c.querySelector('.hint').removeAttribute('style');var a=document.createElement('a');a.href=URL.createObjectURL(new Blob(['<!DOCTYPE html>\n'+c.outerHTML],{type:'text/html'}));a.download='index.html';a.click()};
+}
+document.addEventListener('click',function(e){if(!ed)return;if(e.target.closest('a[contenteditable]')){e.preventDefault();return}var s=e.target.closest('.slot');if(!s)return;var i=document.createElement('input');i.type='file';i.accept='image/*,video/*';i.onchange=function(){var f=i.files[0];if(!f)return;s.classList.add('busy');import('https://esm.sh/@vercel/blob@0.27.3/client').then(function(m){return m.upload(f.name,f,{access:'public',handleUploadUrl:'/api/upload',clientPayload:pw})}).then(function(b){s.classList.remove('busy');s.classList.add('has');s.innerHTML=f.type.indexOf('video')==0?'<video src="'+b.url+'" controls playsinline loop></video>':'<img src="'+b.url+'" alt="">'}).catch(function(x){s.classList.remove('busy');alert('Upload failed: '+x.message)})};i.click()},true);
+document.addEventListener('pointerdown',function(e){var t=ed&&e.target.closest('.drop');if(!t)return;dr={t:t,x:e.pageX-t.offsetLeft,y:e.pageY-t.offsetTop};e.preventDefault()});
+document.addEventListener('pointermove',function(e){if(dr){dr.t.style.left=(e.pageX-dr.x)+'px';dr.t.style.top=(e.pageY-dr.y)+'px'}});
+document.addEventListener('pointerup',function(){dr=null});
+document.addEventListener('dblclick',function(e){var t=ed&&e.target.closest('.drop');if(t)t.remove()});
+})();
+</script>
+
+</body>
+</html>
